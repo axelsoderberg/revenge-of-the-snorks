@@ -3,12 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Elevator
+  - End
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Background Image
   - Water
   - UI
   - 
@@ -38,6 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1854150799
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 3272798423
+    locked: 0
+  - name: 2
+    uniqueID: 4224792159
+    locked: 0
+  - name: 3
+    uniqueID: 2425154593
     locked: 0

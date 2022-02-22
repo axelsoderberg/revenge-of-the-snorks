@@ -1,0 +1,423 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.27f1 (e759542391ea) revision 15161684'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19043) 64bit Core' Language: 'sv' Physical Memory: 16166 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Users\salli\Unity\Unity App\2020.3.27f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/unity_projekt_pro/revenge-of-the-snorks/Revenge of the Snorks/My project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51616
+Successfully changed project path to: C:/unity_projekt_pro/revenge-of-the-snorks/Revenge of the Snorks/My project
+C:/unity_projekt_pro/revenge-of-the-snorks/Revenge of the Snorks/My project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 41.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.27f1 (e759542391ea)
+[Subsystems] Discovering subsystems at path C:/Users/salli/Unity/Unity App/2020.3.27f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/unity_projekt_pro/revenge-of-the-snorks/Revenge of the Snorks/My project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics (ID=0x9b41)
+    Vendor:   
+    VRAM:     8083 MB
+    Driver:   27.20.100.8935
+Initialize mono
+Mono path[0] = 'C:/Users/salli/Unity/Unity App/2020.3.27f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/salli/Unity/Unity App/2020.3.27f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/salli/Unity/Unity App/2020.3.27f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/salli/Unity/Unity App/2020.3.27f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003738 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 44.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.691 seconds
+Domain Reload Profiling:
+	ReloadAssembly (692ms)
+		BeginReloadAssembly (83ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (526ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (186ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008538 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 45.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.236 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1238ms)
+		BeginReloadAssembly (170ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (998ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (371ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (351ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (45ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (202ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2197 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 96.6 MB.
+System memory in use after: 96.6 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2624.
+Total: 4.427700 ms (FindLiveObjects: 0.238900 ms CreateObjectMapping: 0.062500 ms MarkObjects: 3.876900 ms  DeleteObjects: 0.248300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/d
+  artifactKey: Guid(4e4558adf3d8c4e42a987fb16c42a552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/d using Guid(4e4558adf3d8c4e42a987fb16c42a552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe11769bfe8be62bdba68b4e3cb8ad07') in 0.014029 seconds 
+  Import took 0.018777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.842617 seconds.
+  path: Assets/Terrain
+  artifactKey: Guid(4e4558adf3d8c4e42a987fb16c42a552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain using Guid(4e4558adf3d8c4e42a987fb16c42a552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbe0f4230fa44d4fdf21c8443322628') in 0.009558 seconds 
+  Import took 0.014009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.670720 seconds.
+  path: Assets/Terrain/tree.png
+  artifactKey: Guid(16d81192e9b70384ca546d145605eb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Terrain/tree.png using Guid(16d81192e9b70384ca546d145605eb7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5839df8947f3034250bcf14f65462d28') in 0.108496 seconds 
+  Import took 0.113981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 541.443417 seconds.
+  path: Assets/testing
+  artifactKey: Guid(4e4558adf3d8c4e42a987fb16c42a552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing using Guid(4e4558adf3d8c4e42a987fb16c42a552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc0a36783caaa4cd73c35cdb56c2b41') in 0.007872 seconds 
+  Import took 0.013266 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.423618 seconds.
+  path: Assets/testing/This Simple Game
+  artifactKey: Guid(629b8849a93c824439d8e37f15eba38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game using Guid(629b8849a93c824439d8e37f15eba38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04f6cbb5f5f2e278df695ebbee6cb5e') in 0.008636 seconds 
+  Import took 0.012905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.049651 seconds.
+  path: Assets/testing/This Simple Game/cursor.png
+  artifactKey: Guid(1e98e3e243947ba45ac482d1a64d6588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/cursor.png using Guid(1e98e3e243947ba45ac482d1a64d6588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2aceba27611729723060f98fdfe9a5') in 0.020925 seconds 
+  Import took 0.025392 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/testing/This Simple Game/icon.png
+  artifactKey: Guid(36c93a3e7599ccd4587b387bbd37d35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/icon.png using Guid(36c93a3e7599ccd4587b387bbd37d35e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28240fc28ab4ff40450df4d92897f97') in 0.023960 seconds 
+  Import took 0.029047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.813744 seconds.
+  path: Assets/testing/This Simple Game/assets
+  artifactKey: Guid(8a35682bdc198bb42b1c31da6eabe2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets using Guid(8a35682bdc198bb42b1c31da6eabe2a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343ffe1f6f19a61620a29d5bfa323c3c') in 0.007489 seconds 
+  Import took 0.011775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.078922 seconds.
+  path: Assets/testing/This Simple Game/assets/Dan.png
+  artifactKey: Guid(3a79682448d36c245a7f13b37b984f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Dan.png using Guid(3a79682448d36c245a7f13b37b984f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47280ee640092d14a5c5dc326e3a233c') in 0.017696 seconds 
+  Import took 0.021409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/testing/This Simple Game/assets/Dan_shader.png
+  artifactKey: Guid(6c4917ff1d5c32a42a6e6cc49995d17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Dan_shader.png using Guid(6c4917ff1d5c32a42a6e6cc49995d17b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f053b7ba5932e973790a21d1eb7be9') in 0.022097 seconds 
+  Import took 0.025628 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/testing/This Simple Game/assets/Sword.png
+  artifactKey: Guid(097f664b7f47dbc4cb26797ca7ad64e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Sword.png using Guid(097f664b7f47dbc4cb26797ca7ad64e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b43100c55fc049d736a95abaf5cfb4') in 0.022567 seconds 
+  Import took 0.026928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/testing/This Simple Game/assets/Level Test.png
+  artifactKey: Guid(ea078c9aa0b39d849973f791958b3011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Level Test.png using Guid(ea078c9aa0b39d849973f791958b3011) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e2c6945453362daca9965908b72e204') in 0.023578 seconds 
+  Import took 0.027603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.136084 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies
+  artifactKey: Guid(5a0ca5c436fd99843aa49dd65227730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies using Guid(5a0ca5c436fd99843aa49dd65227730a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9256f82932e0321ec648ece2eb63c69') in 0.010485 seconds 
+  Import took 0.015514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.333738 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Imp_idle.png
+  artifactKey: Guid(b8ce42b6193e51644b31e7fa4a11d65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Imp_idle.png using Guid(b8ce42b6193e51644b31e7fa4a11d65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5902bba3c78f0d3ca05130fc6aa1dbd') in 0.014635 seconds 
+  Import took 0.019044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Swampy_idle.png
+  artifactKey: Guid(b88cf17b361f40c43a6062023dea220b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Swampy_idle.png using Guid(b88cf17b361f40c43a6062023dea220b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a8e6e6649096873878f1b58d55126eb') in 0.022320 seconds 
+  Import took 0.025931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.403850 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Imp_idle.png.import
+  artifactKey: Guid(9eb7c8cc130936040826f82f1b63ba29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Imp_idle.png.import using Guid(9eb7c8cc130936040826f82f1b63ba29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4dbab92ba4f987d296fa8623c22f37c') in 0.011253 seconds 
+  Import took 0.014738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.273457 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Swampy
+  artifactKey: Guid(2e5dcfcdcc99ba34084ea4aeb7538dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Swampy using Guid(2e5dcfcdcc99ba34084ea4aeb7538dd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd518d1264d0aaa46a27717fe7ecd2770') in 0.010583 seconds 
+  Import took 0.014830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.869908 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Swampy/01.png
+  artifactKey: Guid(7c1697d91a369c84785efadb822b55cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Swampy/01.png using Guid(7c1697d91a369c84785efadb822b55cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ada442c38be50324f64322f3c2bd8e4') in 0.020057 seconds 
+  Import took 0.025452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Swampy/04.png
+  artifactKey: Guid(21ccd65a48d8f94408ee4d814fd920b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Swampy/04.png using Guid(21ccd65a48d8f94408ee4d814fd920b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c90e3b1aba8a8b4d0da18480b9e954a') in 0.020551 seconds 
+  Import took 0.025610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Swampy/02.png
+  artifactKey: Guid(928ef69c30f642b4b85243f1b56346aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Swampy/02.png using Guid(928ef69c30f642b4b85243f1b56346aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd089ea604314b2c7c0294d577599a45d') in 0.022868 seconds 
+  Import took 0.028545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Swampy/03.png
+  artifactKey: Guid(cde9c9acecdf9c84db27fce544cf555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Swampy/03.png using Guid(cde9c9acecdf9c84db27fce544cf555e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5433bc09ac8f09081e4c9ef4f6e242fe') in 0.024021 seconds 
+  Import took 0.027837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.371831 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Swampy/01.png.import
+  artifactKey: Guid(42dcaca96716317459eb46c0737067c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Swampy/01.png.import using Guid(42dcaca96716317459eb46c0737067c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9909af4df434595233a02ec9b4ba0839') in 0.009105 seconds 
+  Import took 0.012844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.427005 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Imp/01.png
+  artifactKey: Guid(a0a3348262be7c04eb3162ac0a619816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Imp/01.png using Guid(a0a3348262be7c04eb3162ac0a619816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1758e26e492ada66ddbdc4aa631f6bde') in 0.019751 seconds 
+  Import took 0.025912 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Imp/04.png
+  artifactKey: Guid(0cf97cc8009787149af33b34b1245b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Imp/04.png using Guid(0cf97cc8009787149af33b34b1245b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b32e626b6ea8a31871022dfaefdec144') in 0.020845 seconds 
+  Import took 0.024318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Imp/03.png
+  artifactKey: Guid(16172b474a7c5ab4788be11f9e1012bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Imp/03.png using Guid(16172b474a7c5ab4788be11f9e1012bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cef2631c01378f5dfb1504e23745d09') in 0.021246 seconds 
+  Import took 0.026691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/testing/This Simple Game/assets/Enemies/Imp/02.png
+  artifactKey: Guid(0b4c43a1b762b3940a3e652fd17b09f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/testing/This Simple Game/assets/Enemies/Imp/02.png using Guid(0b4c43a1b762b3940a3e652fd17b09f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bc75e88267e9dfd1302f2a6d0d773ab') in 0.018865 seconds 
+  Import took 0.024430 seconds .
+
+========================================================================
+Received Prepare
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Trying to reload asset but can't find object on disk
+Registering precompiled user dll's ...
+Registered in 0.005316 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 31.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.073 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1074ms)
+		BeginReloadAssembly (142ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (863ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (275ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (32ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1498 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.7 MB.
+System memory in use after: 84.8 MB.
+
+Unloading 243 unused Assets to reduce memory usage. Loaded Objects now: 2422.
+Total: 3.093300 ms (FindLiveObjects: 0.203100 ms CreateObjectMapping: 0.052800 ms MarkObjects: 2.674700 ms  DeleteObjects: 0.161800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 277.545159 seconds.
+  path: Assets/SampleScene
+  artifactKey: Guid(3deef9c1d82f1ea4fbc521f0ac192cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SampleScene using Guid(3deef9c1d82f1ea4fbc521f0ac192cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27d3f74228b9e0d60bf4e230a2928a45') in 0.011891 seconds 
+  Import took 0.015716 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

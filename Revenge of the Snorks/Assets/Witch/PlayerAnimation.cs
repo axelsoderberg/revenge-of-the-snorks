@@ -17,13 +17,13 @@ public class PlayerAnimation : MonoBehaviour
         anim = this.gameObject.GetComponent<Animator>();
 
         float result1 = Vector2.SignedAngle(Vector2.up, Vector2.right);
-        Debug.Log("R1 " + result1);
+        //Debug.Log("R1 " + result1);
 
         float result2 = Vector2.SignedAngle(Vector2.up, Vector2.left);
-        Debug.Log("R2 " + result2);
+       // Debug.Log("R2 " + result2);
 
         float result3 = Vector2.SignedAngle(Vector2.up, Vector2.down);
-        Debug.Log("R3 " + result3);
+        //Debug.Log("R3 " + result3);
     }
 
     //MARKER each direction will match with one string element

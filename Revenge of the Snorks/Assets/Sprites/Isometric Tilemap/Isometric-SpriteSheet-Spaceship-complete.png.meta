@@ -137,6 +137,18 @@ TextureImporter:
   - first:
       213: 9018777251682685691
     second: Isometric-SpriteSheet-Spaceship-complete_44
+  - first:
+      213: 129459970290312878
+    second: Isometric-SpriteSheet-Spaceship-complete_45
+  - first:
+      213: -2278800977152544159
+    second: Isometric-SpriteSheet-Spaceship-complete_46
+  - first:
+      213: 7855866620587059151
+    second: Isometric-SpriteSheet-Spaceship-complete_47
+  - first:
+      213: 2899310960168714728
+    second: Isometric-SpriteSheet-Spaceship-complete_48
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1166,6 +1178,90 @@ TextureImporter:
       bones: []
       spriteID: bf29bea7022292d70800000000000000
       internalID: 9018777251682685691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Isometric-SpriteSheet-Spaceship-complete_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea669c5382febc100800000000000000
+      internalID: 129459970290312878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Isometric-SpriteSheet-Spaceship-complete_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162720bb5921060e0800000000000000
+      internalID: -2278800977152544159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Isometric-SpriteSheet-Spaceship-complete_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7a0fab115a50d60800000000000000
+      internalID: 7855866620587059151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Isometric-SpriteSheet-Spaceship-complete_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1c04205fb6c3820800000000000000
+      internalID: 2899310960168714728
       vertices: []
       indices: 
       edges: []

@@ -13,6 +13,11 @@ public class GameControllerScript : MonoBehaviour
 
     [SerializeField] private MainImageScript startObject;
     [SerializeField] private Sprite[] images;
+    [SerializeField] private GameObject game_done_bg;
+    [SerializeField] private TextMesh doneText;
+    [SerializeField] private TextMesh failText;
+    [SerializeField] private GameObject restart;
+
 
     private int[] Randomiser(int[] locations)
     {
@@ -31,6 +36,7 @@ public class GameControllerScript : MonoBehaviour
     {
         int[] locations = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5};
         locations = Randomiser(locations);
+        game_done_bg.gameObject.SetActive(false);
 
         Vector3 startPosition = startObject.transform.position;
 
@@ -57,6 +63,18 @@ public class GameControllerScript : MonoBehaviour
 
                 gameImage.transform.position = new Vector3(positionX, positionY, startPosition.z);
             }
+        }
+    }
+
+    private void Update()
+    {
+        if (score == 6)
+        {
+            EnableDoneText();
+        }
+        if (attempts >= 10)
+        {
+            EnableFailText();
         }
     }
 
@@ -109,8 +127,29 @@ public class GameControllerScript : MonoBehaviour
         secondOpen = null;
     }
 
+    public void EnableDoneText()
+    {
+
+        game_done_bg.SetActive(true);
+        doneText.gameObject.SetActive(true);
+        failText.gameObject.SetActive(false);
+        restart.SetActive(false);
+
+    }
+    public void EnableFailText()
+    {
+
+        game_done_bg.SetActive(true);
+        failText.gameObject.SetActive(true);
+        doneText.gameObject.SetActive(false);
+    }
     public void Quit()
     {
         SceneManager.LoadScene("Upper_floor");
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Memory_minigame");
     }
 }

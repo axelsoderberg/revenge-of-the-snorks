@@ -30,6 +30,8 @@ public class EnemyAi : MonoBehaviour
     public float nextWavePointDist = 3f;
     private int currentWayPoint = 0;
 
+    private bool checkForPlayer = false;
+
 
     private void Start()
     {
@@ -38,7 +40,11 @@ public class EnemyAi : MonoBehaviour
 
         if (target == null)
         {
-            Debug.LogError("No player");
+            if (!checkForPlayer)
+            {
+                checkForPlayer = true;
+                StartCoroutine(searchForPlayer());
+            }
             return;
         }
 
@@ -49,13 +55,32 @@ public class EnemyAi : MonoBehaviour
             
     }
 
+    IEnumerator searchForPlayer()
+    {
+        GameObject sResult = GameObject.FindGameObjectWithTag("Player");
+        if(sResult == null)
+        {
+            yield return new WaitForSeconds(0.5f);
+            StartCoroutine (searchForPlayer());
+        }else
+        {
+            checkForPlayer = false;
+            StartCoroutine (UpdatePath());
+            yield return false;
+        }
+
+    }
+
     IEnumerator UpdatePath()
     {
         if(target == null)
         {
-            //TODO: Insert playersearch
-            yield break;
-         
+            if (!checkForPlayer)
+            {
+                checkForPlayer = true;
+                StartCoroutine(searchForPlayer());
+            }
+            yield return false;
         }
         seeker.StartPath(transform.position, target.position, OnPathComplete);
 
@@ -78,6 +103,12 @@ public class EnemyAi : MonoBehaviour
     {
         if(target == null)
         {
+            if (!checkForPlayer)
+            {
+                checkForPlayer = true;
+                StartCoroutine(searchForPlayer());
+            }
+           
             return;
         }
         if(path == null)
@@ -100,7 +131,14 @@ public class EnemyAi : MonoBehaviour
         Vector3 dir = (path.vectorPath[currentWayPoint] - transform.position).normalized;
         dir *= speed * Time.deltaTime;
 
-
+        //move the AI
+        rb.AddForce(dir, fMode);
+        float dist = Vector3.Distance(transform.position, path.vectorPath[currentWayPoint]);
+        if (dist < nextWavePointDist)
+        {
+            currentWayPoint++;
+            return;
+        }
 
     }
 

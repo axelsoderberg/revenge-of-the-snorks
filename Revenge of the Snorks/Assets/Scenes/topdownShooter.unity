@@ -184,14 +184,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 235278022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 766914554887e1f428dbdb327613ffdb, type: 3}
+  m_Script: {fileID: 11500000, guid: c8edbe4892582a34e8434aa26c0c6dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 841460075}
-  updateRate: 2
-  speed: 20
-  fMode: 0
-  pathIsEnded: 0
+  speed: 400
   nextWavePointDist: 3
 --- !u!58 &235278024
 CircleCollider2D:
@@ -222,7 +219,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -336,8 +333,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235278022}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0741127, y: -0.38607013, z: 0}
-  m_LocalScale: {x: 2.5625, y: 2.6256, z: 1}
+  m_LocalPosition: {x: -1.9133, y: 1.91, z: 0}
+  m_LocalScale: {x: 4.572781, y: 4.441465, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8

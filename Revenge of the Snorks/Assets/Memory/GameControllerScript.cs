@@ -72,7 +72,7 @@ public class GameControllerScript : MonoBehaviour
         {
             EnableDoneText();
         }
-        if (attempts >= 10)
+        if (attempts > 14)
         {
             EnableFailText();
         }
@@ -142,6 +142,8 @@ public class GameControllerScript : MonoBehaviour
         game_done_bg.SetActive(true);
         failText.gameObject.SetActive(true);
         doneText.gameObject.SetActive(false);
+        restart.SetActive(true);
+        startObject.GameDone();
     }
     public void Quit()
     {

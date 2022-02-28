@@ -33,7 +33,7 @@ public class NetGameController : MonoBehaviour
         {
             win = true;
             UnityEngine.Debug.Log("Net puzzle win");
-            SceneManager.LoadScene (sceneName:"Ship_lower_deck");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }

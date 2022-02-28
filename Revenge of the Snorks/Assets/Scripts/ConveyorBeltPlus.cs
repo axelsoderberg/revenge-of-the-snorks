@@ -5,7 +5,7 @@ public class ConveyorBeltPlus : MonoBehaviour
 {
     public GameObject gob;
     public GameObject parent;
-    private Vector3 v = new Vector3(0.5f, -0.25f, 0);
+    private Vector3 v = new Vector3(0.3f, -0.15f, 0);
     private bool createFlag = true;
     // Start is called before the first frame update
     void Start()

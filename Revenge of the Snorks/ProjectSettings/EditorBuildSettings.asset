@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/upper_floor.unity
     guid: 8fdfb9f5476185d41b967a404c31d80c
+  - enabled: 1
+    path: Assets/Scenes/Net_puzzle.unity
+    guid: cc111a5f61157e1429f169285457081a
   m_configObjects: {}

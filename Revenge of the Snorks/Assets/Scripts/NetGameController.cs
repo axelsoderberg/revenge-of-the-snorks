@@ -2,6 +2,7 @@ using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NetGameController : MonoBehaviour
 {
@@ -31,7 +32,8 @@ public class NetGameController : MonoBehaviour
             pictures[8].rotation.eulerAngles.z == 0)
         {
             win = true;
-            UnityEngine.Debug.Log("Win!");
+            UnityEngine.Debug.Log("Net puzzle win");
+            SceneManager.LoadScene("SampleScene");
         }
     }
 }

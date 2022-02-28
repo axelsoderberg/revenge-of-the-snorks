@@ -19,6 +19,8 @@ public class GameControllerScript : MonoBehaviour
     [SerializeField] private GameObject restart;
 
 
+
+
     private int[] Randomiser(int[] locations)
     {
         int[] array = locations.Clone() as int[];
@@ -34,6 +36,8 @@ public class GameControllerScript : MonoBehaviour
 
     private void Start()
     {
+
+        gamesdone = MinigameController.Instance.minigames_done;
         int[] locations = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5};
         locations = Randomiser(locations);
         game_done_bg.gameObject.SetActive(false);
@@ -64,6 +68,13 @@ public class GameControllerScript : MonoBehaviour
                 gameImage.transform.position = new Vector3(positionX, positionY, startPosition.z);
             }
         }
+    }
+
+    public List<string> gamesdone;
+
+    public void saveProgress()
+    {
+        MinigameController.Instance.minigames_done = gamesdone;
     }
 
     private void Update()
@@ -129,16 +140,14 @@ public class GameControllerScript : MonoBehaviour
 
     public void EnableDoneText()
     {
-
         game_done_bg.SetActive(true);
         doneText.gameObject.SetActive(true);
         failText.gameObject.SetActive(false);
         restart.SetActive(false);
-
+        MinigameController.Instance.minigames_done.Add("Memory");
     }
     public void EnableFailText()
     {
-
         game_done_bg.SetActive(true);
         failText.gameObject.SetActive(true);
         doneText.gameObject.SetActive(false);
@@ -147,7 +156,8 @@ public class GameControllerScript : MonoBehaviour
     }
     public void Quit()
     {
-        SceneManager.LoadScene("Upper_floor");
+        //SceneManager.LoadSceneAsync("upper_floor");
+        SceneManager.UnloadSceneAsync("Memory_minigame");
     }
 
     public void Restart()

@@ -3,21 +3,23 @@ using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
 {
-    
-    [System.Serializable]
-    public class Stats
+
+    public int health = 100;
+
+    //public GameObject death;
+
+    public void TakeDamage(int damage)
     {
-        public int Health = 100;
+        health -= damage;
+        if(health <= 0)
+        {
+            Die();
+        }
     }
 
-    public Stats stats = new Stats();
-    
-     public void DamageTaken(int damage)
+    void Die()
     {
-        stats.Health -= damage;
-        if(stats.Health <= 0)
-        {
-            Destroy(gameObject);
-        }
+        //Instantiate(death, transform.position, Quaternion.identity);
+        Destroy(gameObject);
     }
 }

@@ -23,6 +23,7 @@ public class WaveSpawner : MonoBehaviour
     public float waveCountDown;
     private SpawnState state = SpawnState.COUNTING;
     private float searchCountDown;
+    public Transform[] spawnPoints;
 
     void Start()
     {
@@ -94,9 +95,12 @@ public class WaveSpawner : MonoBehaviour
     void EnemySpawn(Transform _enemy)
     {
         Debug.Log("Spawning Enemy: " + _enemy.name);
-        Instantiate(_enemy, transform.position, transform.rotation);
-
-     
+        Transform _sp = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
+        Instantiate(_enemy, _sp.position, _sp.rotation);
+        /*Vector2 firePointPos = new Vector2(firePointPos.position.x, firePointPos.position.y);
+        RaycastHit2D hit = Physics2D.Raycast (, )
+        EnemyAi enemy = RaycastHit2D.collider.GetComponent<EnemyAi>();
+        */
 
     }
 

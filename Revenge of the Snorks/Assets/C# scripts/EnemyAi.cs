@@ -2,7 +2,7 @@ using Pathfinding;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
-
+using System;
 
 [RequireComponent( typeof (Rigidbody2D))]
 [RequireComponent(typeof (Seeker))]
@@ -53,6 +53,11 @@ public class EnemyAi : MonoBehaviour
         StartCoroutine(UpdatePath());
     
             
+    }
+
+    internal void DamageEnemy(int damage)
+    {
+        throw new NotImplementedException();
     }
 
     IEnumerator searchForPlayer()

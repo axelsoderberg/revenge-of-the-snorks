@@ -6,7 +6,7 @@ using System;
 public class WaveSpawner : MonoBehaviour
 {
 
-    public enum SpawnState { SPAWNING, WAITING, COUNTING };
+    public enum SpawnState { SPAWNING, WAITING, COUNTING, FINISHED};
     [System.Serializable]
     public class Wave
     {
@@ -44,6 +44,10 @@ public class WaveSpawner : MonoBehaviour
             {
                 return;
             }
+            if(state == SpawnState.FINISHED)
+            {
+                return;
+            }
         }
 
         if (waveCountDown <= 0)
@@ -76,6 +80,19 @@ public class WaveSpawner : MonoBehaviour
         return true;
     }
 
+    void WaveCompleted()
+    {
+        Debug.Log("Wave Completed!");
+        state = SpawnState.FINISHED;
+        waveCountDown = timeBetweenWaves;
+
+        if(nextWave + 1 > waves.Length - 1)
+        {
+            state = SpawnState.FINISHED;
+
+        }
+    }
+
 
     IEnumerator SpawnWave(Wave _wave)
     {
@@ -95,6 +112,8 @@ public class WaveSpawner : MonoBehaviour
     void EnemySpawn(Transform _enemy)
     {
         Debug.Log("Spawning Enemy: " + _enemy.name);
+        
+        
         Transform _sp = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
         Instantiate(_enemy, _sp.position, _sp.rotation);
         /*Vector2 firePointPos = new Vector2(firePointPos.position.x, firePointPos.position.y);

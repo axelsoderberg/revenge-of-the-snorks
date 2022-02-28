@@ -349,7 +349,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 235278022}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81898d72c403c2c4b8f654a2ed3ece8f, type: 3}
+  m_Script: {fileID: 11500000, guid: 795a5b1682ddc2f4aab7b432e34f1b29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stats:
@@ -978,7 +978,7 @@ GameObject:
   - component: {fileID: 1315293174}
   m_Layer: 0
   m_Name: GlobalScript
-  m_TagString: Untagged
+  m_TagString: GameMaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -995,6 +995,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 977bf4e4d58caac4096b82699f131a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waves:
+  - name: Wave1
+    enemy: {fileID: 0}
+    count: 0
+    rate: 0
+  - name: Wave2
+    enemy: {fileID: 0}
+    count: 0
+    rate: 0
+  - name: Wave3
+    enemy: {fileID: 0}
+    count: 0
+    rate: 0
   timeBetweenWaves: 5
   waveCountDown: 2
 --- !u!4 &1315293173
@@ -1020,12 +1033,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1315293171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 535df6f57844deb42a42623156602e5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ac0afed2918dda4dbf40a8e9a7065bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 171690464}
-  spawnDelay: 2
+  enemyPrefab: {fileID: 0}
   spawnPrefab: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  spawnDelay: 2
 --- !u!1 &1440386792
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,8 +6,8 @@ using System;
 public class WaveSpawner : MonoBehaviour
 {
 
-    [Serializable]
     public enum SpawnState { SPAWNING, WAITING, COUNTING };
+    [System.Serializable]
     public class Wave
     {
         public string name;

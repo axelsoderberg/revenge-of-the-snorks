@@ -44,6 +44,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        UnityEngine.Debug.Log(collision);
+        if (collision.gameObject.tag == "Collision+")
+            rb.transform.position += new Vector3(0.3f,-0.15f,0) * Time.deltaTime;
+    }
+
 
 
 

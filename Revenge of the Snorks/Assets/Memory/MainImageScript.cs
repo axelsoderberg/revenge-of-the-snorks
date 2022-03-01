@@ -32,4 +32,9 @@ public class MainImageScript : MonoBehaviour
     {
         image_unknown.SetActive(true); // Hide image
     }
+
+    public void GameDone()
+    {
+        image_unknown.SetActive(false);
+    }
 }

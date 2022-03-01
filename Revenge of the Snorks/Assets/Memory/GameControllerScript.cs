@@ -1,3 +1,11 @@
+/*
+ * The code and some of the picture is taken from the video below
+ * https://www.youtube.com/watch?v=yjQT0IEFbgc&ab_channel=GetWiseTuts 
+ * 
+ * The pictures used in the minigame
+ * https://henrysoftware.itch.io/pixel-food 
+ * 
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -159,13 +167,12 @@ public class GameControllerScript : MonoBehaviour
     }
     public void Quit()
     {
-        //SceneManager.LoadSceneAsync("upper_floor");
-        SceneManager.UnloadSceneAsync("Memory_minigame");
+        SceneManager.LoadSceneAsync("upper_floor");
+       // SceneManager.UnloadSceneAsync("Memory_minigame");
     }
 
     public void Restart()
     {
-        SceneManager.UnloadSceneAsync("Memory_minigame");
         SceneManager.LoadScene("Memory_minigame");
     }
 }

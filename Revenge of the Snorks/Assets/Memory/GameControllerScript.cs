@@ -14,9 +14,12 @@ public class GameControllerScript : MonoBehaviour
     [SerializeField] private MainImageScript startObject;
     [SerializeField] private Sprite[] images;
     [SerializeField] private GameObject game_done_bg;
+    [SerializeField] private GameObject exit;
     [SerializeField] private TextMesh doneText;
     [SerializeField] private TextMesh failText;
     [SerializeField] private GameObject restart;
+
+
 
 
     private int[] Randomiser(int[] locations)
@@ -34,6 +37,8 @@ public class GameControllerScript : MonoBehaviour
 
     private void Start()
     {
+
+        gamesdone = MinigameController.Instance.minigames_done;
         int[] locations = { 0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5};
         locations = Randomiser(locations);
         game_done_bg.gameObject.SetActive(false);
@@ -66,13 +71,20 @@ public class GameControllerScript : MonoBehaviour
         }
     }
 
+    public List<string> gamesdone;
+
+    public void saveProgress()
+    {
+        MinigameController.Instance.minigames_done = gamesdone;
+    }
+
     private void Update()
     {
         if (score == 6)
         {
             EnableDoneText();
         }
-        if (attempts >= 10)
+        if (attempts > 14)
         {
             EnableFailText();
         }
@@ -129,27 +141,31 @@ public class GameControllerScript : MonoBehaviour
 
     public void EnableDoneText()
     {
-
         game_done_bg.SetActive(true);
         doneText.gameObject.SetActive(true);
         failText.gameObject.SetActive(false);
         restart.SetActive(false);
-
+        exit.SetActive(true);
+        MinigameController.Instance.minigames_done.Add("Memory");
     }
     public void EnableFailText()
     {
-
         game_done_bg.SetActive(true);
         failText.gameObject.SetActive(true);
         doneText.gameObject.SetActive(false);
+        restart.SetActive(true);
+        exit.SetActive(false);
+        startObject.GameDone();
     }
     public void Quit()
     {
-        SceneManager.LoadScene("Upper_floor");
+        //SceneManager.LoadSceneAsync("upper_floor");
+        SceneManager.UnloadSceneAsync("Memory_minigame");
     }
 
     public void Restart()
     {
+        SceneManager.UnloadSceneAsync("Memory_minigame");
         SceneManager.LoadScene("Memory_minigame");
     }
 }

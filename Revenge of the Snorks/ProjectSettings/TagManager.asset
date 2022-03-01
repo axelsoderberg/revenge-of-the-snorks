@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Memory_trigger
+  - Black_hole
+  tags:
   - Minigame
   - Conveyor+
   - Conveyor-

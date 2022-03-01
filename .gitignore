@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@ClaraSimonsson 
-axelsoderberg
-/
-revenge-of-the-snorks
-Public
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-revenge-of-the-snorks/.gitignore
-@sallishsh
-sallishsh Changed the gitignore file
-Latest commit 6964efd 3 days ago
- History
- 2 contributors
-@sallishsh@axelsoderberg
-65 lines (53 sloc)  1.16 KB
-   
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore

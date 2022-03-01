@@ -6,8 +6,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637816589110000000
-    m_Hash: 4086306028
+      ticks: 637817367325928442
+    m_Hash: 3511159246
   m_LockFileStatus:
     m_FilePath: C:/Users/karla/Documents/DAT510/revenge-of-the-snorks/Revenge of
       the Snorks/Packages/packages-lock.json
@@ -15,8 +15,8 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637816589110000000
-    m_Hash: 3266030487
+      ticks: 637817367325928442
+    m_Hash: 1582430119
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -109,7 +109,6 @@ m_PackageAssets:
         - 5.0.9
         - 5.0.10
         - 5.1.0
-        - 5.1.1
         - 6.0.0-pre.1
         - 6.0.0-pre.2
         - 6.0.1
@@ -129,7 +128,6 @@ m_PackageAssets:
         compatible:
         - 5.0.10
         - 5.1.0
-        - 5.1.1
         verified: 5.0.10
       dependencies:
       - name: com.unity.2d.common
@@ -703,13 +701,11 @@ m_PackageAssets:
         - 1.14.7
         - 1.14.9
         - 1.14.12
-        - 1.14.13
         - 1.15.1
         - 1.15.4
         - 1.15.7
         - 1.15.9
         - 1.15.12
-        - 1.15.13
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -724,7 +720,6 @@ m_PackageAssets:
         - 1.15.7
         - 1.15.9
         - 1.15.12
-        - 1.15.13
         - 2.0.0-preview.6
         - 2.0.0-preview.8
         - 2.0.0-preview.15
@@ -735,7 +730,7 @@ m_PackageAssets:
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
-        verified: 1.15.13
+        verified: 1.15.12
       dependencies:
       - name: com.unity.nuget.newtonsoft-json
         version: 2.0.0
@@ -3962,7 +3957,6 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.2
-        - 3.0.1
         compatible:
         - 1.0.0-preview.2
         - 1.0.0-preview.3
@@ -3975,7 +3969,6 @@ m_PackageAssets:
         - 2.0.0
         - 2.0.1-preview.1
         - 2.0.2
-        - 3.0.1
         verified: 2.0.2
       dependencies: []
       resolvedDependencies: []
@@ -4032,8 +4025,6 @@ m_PackageAssets:
         - 1.1.0-pre.10
         - 1.1.0-pre.11
         - 1.1.0-pre.41
-        - 1.1.0-pre.69
-        - 1.2.0
         compatible:
         - 1.0.1
         - 1.1.0-pre.7
@@ -4042,8 +4033,6 @@ m_PackageAssets:
         - 1.1.0-pre.10
         - 1.1.0-pre.11
         - 1.1.0-pre.41
-        - 1.1.0-pre.69
-        - 1.2.0
         verified: 1.0.1
       dependencies:
       - name: com.unity.modules.unitywebrequest
@@ -4124,7 +4113,6 @@ m_PackageAssets:
         - 6.0.2
         - 7.0.0-pre.3
         - 7.0.0-pre.4
-        - 7.0.0
         compatible:
         - 4.0.4
         - 4.1.0

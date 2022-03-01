@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
@@ -7,13 +8,13 @@ public class PlayerMovement : MonoBehaviour
     private bool minigame_complete = false;
     private float moveH, moveV;
     [SerializeField] private float moveSpeed = 1.0f;
-    [SerializeField] private GameObject black_hole;
+    //[SerializeField] private GameObject black_hole;
     public List<string> gamesdone;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        black_hole.SetActive(false);
+        GameObject.FindGameObjectWithTag("Black_hole").SetActive(false);
         gamesdone = MinigameController.Instance.minigames_done;
         DontDestroyOnLoad(this);
     }
@@ -29,20 +30,33 @@ public class PlayerMovement : MonoBehaviour
 
         if (MinigameController.Instance.minigames_done.Contains("Memory"))
         {
-            black_hole.SetActive(true);
+            GameObject.FindGameObjectWithTag("Black_hole").SetActive(true);
             //GameObject.FindGameObjectWithTag("Memory_trigger").SetActive(false);
             GameObject.FindGameObjectWithTag("Memory_trigger").SetActive(false);
         }
     }
-
-
-    public void saveProgress()
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         MinigameController.Instance.minigames_done = gamesdone;
         if (SceneManager.GetActiveScene().name == "upper_floor") {
             SceneManager.LoadScene("Memory_minigame");
+        }
+
+        if (GameObject.FindGameObjectWithTag("Memory_trigger"))
+        {
+            //Destroy(collision);
+            DontDestroyOnLoad(rb);
+            SceneManager.LoadScene("Memory_minigame", LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("Memory_minigame");
+        }
+        else if (GameObject.FindGameObjectWithTag("Black_hole"))
+        {
+            Destroy(collision);
+            GameObject.FindGameObjectWithTag("Black_hole").SetActive(false);
+            DontDestroyOnLoad(rb);
+            SceneManager.LoadScene("Memory_minigame", LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("Memory_minigame");
         }
 
         if (SceneManager.GetActiveScene().name == "SampleScene") {
@@ -62,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (MinigameController.Instance.minigames_done.Contains("Memory"))
         { 
-            black_hole.SetActive(true);
+            GameObject.FindGameObjectWithTag("Black_hole").SetActive(true);
             GameObject.FindGameObjectWithTag("Memory_trigger").SetActive(false);
         }
     }
@@ -72,27 +86,5 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Collision+")
             rb.transform.position += new Vector3(0.3f,-0.15f,0) * Time.deltaTime;
     }
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (GameObject.FindGameObjectWithTag("Memory_trigger"))
-        {
-            //Destroy(collision);
-            DontDestroyOnLoad(rb);
-            SceneManager.LoadScene("Memory_minigame", LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("Memory_minigame");
-        }
-        else if (GameObject.FindGameObjectWithTag("Black_hole"))
-        {
-            Destroy(collision);
-            GameObject.FindGameObjectWithTag("Black_hole").SetActive(false);
-            DontDestroyOnLoad(rb);
-            SceneManager.LoadScene("Memory_minigame", LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("Memory_minigame");
-        }
-    }
-
-
 
 }

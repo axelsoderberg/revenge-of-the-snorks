@@ -159,13 +159,12 @@ public class GameControllerScript : MonoBehaviour
     }
     public void Quit()
     {
-        //SceneManager.LoadSceneAsync("upper_floor");
-        SceneManager.UnloadSceneAsync("Memory_minigame");
+        SceneManager.LoadSceneAsync("upper_floor");
+       // SceneManager.UnloadSceneAsync("Memory_minigame");
     }
 
     public void Restart()
     {
-        SceneManager.UnloadSceneAsync("Memory_minigame");
         SceneManager.LoadScene("Memory_minigame");
     }
 }

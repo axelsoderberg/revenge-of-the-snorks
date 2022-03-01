@@ -33,22 +33,19 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (SceneManager.GetActiveScene().name == "upper_floor") {
-            if (collision.tag == "Memory_trigger")
+            if (collision.tag == "Memory_trigger" && !minigame_complete)
             {
-                //Destroy(collision);
-                DontDestroyOnLoad(rb);
-                SceneManager.LoadScene("Memory_minigame", LoadSceneMode.Additive);
-                SceneManager.UnloadSceneAsync("Memory_minigame");
+                SceneManager.LoadScene("Memory_minigame");
                 GameObject.FindGameObjectWithTag("Black_hole").SetActive(true);
                 minigame_complete = true;
+                Destroy(GameObject.FindGameObjectWithTag("Memory_trigger"));
             }
-            else if (collision.tag == "Black_hole" && minigame_complete)
+            else if (collision.tag == "Black_hole" && MinigameController.Instance.minigames_done.Contains("Memory"))
             {
-                Destroy(collision);
-                GameObject.FindGameObjectWithTag("Black_hole").SetActive(false);
-                DontDestroyOnLoad(rb);
-                SceneManager.LoadScene("Memory_minigame", LoadSceneMode.Additive);
-                SceneManager.UnloadSceneAsync("Memory_minigame");
+
+                //GameObject.FindGameObjectWithTag("Black_hole").SetActive(false);
+                SceneManager.LoadScene("SampleScene");
+                minigame_complete = false;
             }
         }
 
@@ -56,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "SampleScene") {
             if (collision.tag == "Finish" && minigame_complete) {
                 transform.position = new Vector3(7.83300018f,-2.21000004f,0);
+                minigame_complete = false;
                 SceneManager.LoadScene("upper_floor");
             } if (collision.tag == "Minigame" && !minigame_complete) {
                 SceneManager.LoadScene("Net_puzzle");

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace EasyUI.Dialogs
 {
@@ -9,19 +10,22 @@ namespace EasyUI.Dialogs
     public class Dialog
     {
         public string Title = "Ohno! This level is filled with mobs, you have to kill them to continue! ";
-        public string Message;
+        
 
     }
     public class DialogUI : MonoBehaviour
     {
         [SerializeField] GameObject canvas;
         [SerializeField] Text titleUIText;
-        //[SerializeField] Text messageUIText;
         [SerializeField] Button closeUIButton;
+     
 
 
         public static DialogUI Instance;
         Dialog dialog = new Dialog();
+
+
+
         private void Awake()
         {
             Instance = this;
@@ -37,31 +41,23 @@ namespace EasyUI.Dialogs
         }
 
 
-       /* public DialogUI SetMessage(string message)
-        {
-            dialog.Message = message;
-            return Instance;
-        }
-       */
-
         public void Show()
         {
 
             titleUIText.text = dialog.Title;
-           // messageUIText.text = dialog.Message;
-            canvas.SetActive(true);
-
-            //Reset dialog
-
+       
+            
             dialog = new Dialog();
-
             canvas.SetActive(true);
+   
 
         }
 
-        public void Hide() {
+        public void Hide()
+        {
             canvas.SetActive(false);
-         }
-
+        }
     }
-}
+
+
+    }   

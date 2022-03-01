@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using UnityEngine;
-[RequireComponent(typeof(CanvasGroup))]
+
 public class Mobs : MonoBehaviour
 {
 	static int AnimatorWalk = Animator.StringToHash("Walk");
 	static int AnimatorAttack = Animator.StringToHash("Attack");
 	Animator _animator;
-
+	
 	public int health = 20;
 	public GameObject deathEffect;
+
+	[SerializeField] private GameObject canvas;
 	void Awake()
 	{
 		_animator = GetComponentInChildren<Animator>();
@@ -56,4 +58,15 @@ public class Mobs : MonoBehaviour
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
 		Destroy(gameObject);
     }
+	/*private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if (collision.tag == "Player")
+		{
+			Debug.Log("2Colliding");
+			canvas.SetActive(true);
+		
+		}
+	}
+	*/
+
 }

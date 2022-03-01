@@ -8,6 +8,7 @@ TagManager:
   - End
   - Enemy
   - GameMaster
+  - Popup
   layers:
   - Default
   - TransparentFX

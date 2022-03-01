@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private static PlayerMovement gob;
     private bool minigame_complete = false;
     private float moveH, moveV;
     [SerializeField] private float moveSpeed = 1.0f;
@@ -18,6 +19,11 @@ public class PlayerMovement : MonoBehaviour
             gamesdone = MinigameController.Instance.minigames_done;
         }*/
         DontDestroyOnLoad(this);
+        if (gob == null) {
+            gob = this;
+        } else {
+            DestroyObject(gameObject);
+        }
     }
     private void FixedUpdate()
     {

@@ -13,12 +13,7 @@ public class flare : MonoBehaviour
 
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        GameObject fire = Instantiate(thisFlare, transform.position, Quaternion.identity);
-        Destroy(fire, 10f);
-        Destroy(gameObject);
-    }*/
+ 
     private void OnTriggerEnter2D(Collider2D hit)
     {
        EnemyStats enemy =  hit.GetComponent<EnemyStats>();

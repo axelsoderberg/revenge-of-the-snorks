@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(this);
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();//MARKER dont forget to tag player as tag
     }
 

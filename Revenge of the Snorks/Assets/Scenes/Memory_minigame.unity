@@ -245,7 +245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148275027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.652, y: 2.92, z: 0}
+  m_LocalPosition: {x: 5.67, y: 3.95, z: 0}
   m_LocalScale: {x: 0.27, y: 0.35, z: 1}
   m_Children: []
   m_Father: {fileID: 1395712065}
@@ -505,9 +505,11 @@ MonoBehaviour:
   - {fileID: -3448772663268512762, guid: d2801da74a569da44a6e3513ad0a0a48, type: 3}
   - {fileID: 5493336763961894103, guid: d2801da74a569da44a6e3513ad0a0a48, type: 3}
   game_done_bg: {fileID: 1395712063}
+  exit: {fileID: 1203683470}
   doneText: {fileID: 550733173}
   failText: {fileID: 2025678953}
   restart: {fileID: 148275027}
+  gamesdone: []
   scoreText: {fileID: 906477939}
   attemptsText: {fileID: 3615254}
 --- !u!4 &411540389
@@ -839,12 +841,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203683470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.49, y: 104.63, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.69, y: 3.13, z: 1}
+  m_LocalScale: {x: 0.26666668, y: 0.33333334, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1395712065}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275022617
 GameObject:
@@ -1010,8 +1012,9 @@ Transform:
   - {fileID: 550733172}
   - {fileID: 2025678952}
   - {fileID: 148275028}
+  - {fileID: 1203683474}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1475411025
 GameObject:
@@ -1042,7 +1045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde069daa05a3be47b12c55b1833e3cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  memory: 0
+  minigames_done: []
 --- !u!4 &1475411027
 Transform:
   m_ObjectHideFlags: 0
@@ -1055,7 +1058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1571365176
 GameObject:

@@ -14,6 +14,7 @@ public class GameControllerScript : MonoBehaviour
     [SerializeField] private MainImageScript startObject;
     [SerializeField] private Sprite[] images;
     [SerializeField] private GameObject game_done_bg;
+    [SerializeField] private GameObject exit;
     [SerializeField] private TextMesh doneText;
     [SerializeField] private TextMesh failText;
     [SerializeField] private GameObject restart;
@@ -144,6 +145,7 @@ public class GameControllerScript : MonoBehaviour
         doneText.gameObject.SetActive(true);
         failText.gameObject.SetActive(false);
         restart.SetActive(false);
+        exit.SetActive(true);
         MinigameController.Instance.minigames_done.Add("Memory");
     }
     public void EnableFailText()
@@ -152,6 +154,7 @@ public class GameControllerScript : MonoBehaviour
         failText.gameObject.SetActive(true);
         doneText.gameObject.SetActive(false);
         restart.SetActive(true);
+        exit.SetActive(false);
         startObject.GameDone();
     }
     public void Quit()
@@ -162,6 +165,7 @@ public class GameControllerScript : MonoBehaviour
 
     public void Restart()
     {
+        SceneManager.UnloadSceneAsync("Memory_minigame");
         SceneManager.LoadScene("Memory_minigame");
     }
 }

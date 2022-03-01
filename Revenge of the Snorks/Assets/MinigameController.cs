@@ -5,7 +5,7 @@ using UnityEngine;
 public class MinigameController : MonoBehaviour
 {
     public static MinigameController Instance;
-    public List<string> minigames_done; 
+    public List<string> minigames_done = new List<string>(); 
 
     void Awake()
     {
